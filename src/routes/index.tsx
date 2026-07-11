@@ -72,7 +72,7 @@ function Index() {
             </Reveal>
             <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
               {category.products.map((product, i) => (
-                <Reveal key={product.name} delay={(i % 4) * 70}>
+                <Reveal key={product.name} delay={(i % 4) * 70} className="h-full">
                   <ProductCard product={product} onOpen={setLightbox} />
                 </Reveal>
               ))}

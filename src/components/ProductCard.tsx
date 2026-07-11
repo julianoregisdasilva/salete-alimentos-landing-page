@@ -13,7 +13,7 @@ export function ProductCard({ product, onOpen }: ProductCardProps) {
     <button
       type="button"
       onClick={() => clickable && onOpen(product)}
-      className={`group flex flex-col overflow-hidden rounded-2xl border border-border bg-card text-left shadow-sm transition-shadow ${
+      className={`group flex h-full w-full flex-col overflow-hidden rounded-2xl border border-border bg-card text-left shadow-sm transition-shadow ${
         clickable ? "cursor-zoom-in hover:shadow-lg" : "cursor-default"
       }`}
       aria-label={clickable ? `Ver ${product.name} em tamanho maior` : product.name}
