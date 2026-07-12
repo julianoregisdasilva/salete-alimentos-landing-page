@@ -48,7 +48,7 @@ export const categories: ProductCategory[] = [
   {
     title: "Salgados & Petiscos",
     products: [
-      { name: "Coxinha de Frango", image: "images/choxinha.png" },
+      { name: "Coxinha de Frango", image: "images/coxinha.png" },
       { name: "Salsicha", image: "images/salsicha.png" },
       { name: "Doguinho", image: "images/doguinho.png" },
       { name: "Pão de Queijo", image: "images/pao_de_queijo.png" },
