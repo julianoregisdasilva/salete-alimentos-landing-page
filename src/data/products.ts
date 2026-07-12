@@ -1,8 +1,3 @@
-import calabresaAsset from "@/assets/calabresa.png.asset.json";
-import calabresaCheddarAsset from "@/assets/calabresa_com_cheddar.png.asset.json";
-import camaraoAsset from "@/assets/camarao.png.asset.json";
-import carneBolonhesaAsset from "@/assets/carne_bolonhesa.png.asset.json";
-
 export type Product = {
   name: string;
   image?: string;
@@ -18,10 +13,10 @@ export const categories: ProductCategory[] = [
   {
     title: "Empanadas Salgadas",
     products: [
-      { name: "Calabresa", image: calabresaAsset.url },
-      { name: "Calabresa com Cheddar", image: calabresaCheddarAsset.url },
-      { name: "Camarão", image: camaraoAsset.url },
-      { name: "Carne Bolonhesa", image: carneBolonhesaAsset.url },
+      { name: "Calabresa", image: "images/calabresa.png" },
+      { name: "Calabresa com Cheddar", image: "images/calabresa_com_cheddar.png" },
+      { name: "Camarão", image: "images/camarao.png" },
+      { name: "Carne Bolonhesa", image: "images/carne_bolonhesa.png" },
       { name: "Carne ao Molho Branco" },
       { name: "Frango" },
       { name: "Frango (massa integral)" },
