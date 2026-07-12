@@ -1,33 +1,22 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Instagram, Leaf, MessageCircle, PlayCircle, X } from "lucide-react";
-import logoAsset from "@/assets/logo.png.asset.json";
 import { categories, type Product } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
 import { Reveal } from "@/components/Reveal";
 
-export const Route = createFileRoute("/")({
-  component: Index,
-});
-
 const WHATSAPP_URL = "https://wa.me/5548984440456";
 const INSTAGRAM_URL = "https://www.instagram.com/salete.alimentos/";
 
-function Index() {
+export default function App() {
   const [lightbox, setLightbox] = useState<Product | null>(null);
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero */}
       <header className="relative overflow-hidden bg-primary text-primary-foreground">
         <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-brand-yellow/20 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-32 -left-16 h-80 w-80 rounded-full bg-brand-red-dark/60 blur-3xl" />
         <div className="relative mx-auto flex max-w-4xl flex-col items-center px-6 py-16 text-center md:py-24">
-          <img
-            src={logoAsset.url}
-            alt="Salete Alimentos"
-            className="h-40 w-auto md:h-52"
-          />
+          <img src="images/logo.png" alt="Salete Alimentos" className="h-40 w-auto md:h-52" />
           <h1 className="mt-8 max-w-2xl text-4xl font-semibold leading-tight md:text-5xl">
             Mais de 30 anos de história em Floripa
           </h1>
@@ -43,7 +32,6 @@ function Index() {
         </div>
       </header>
 
-      {/* Selo sem conservantes */}
       <div className="bg-brand-yellow py-3">
         <p className="mx-auto flex max-w-4xl items-center justify-center gap-2 px-4 text-center text-sm font-extrabold uppercase tracking-wide text-secondary-foreground">
           <Leaf className="h-4 w-4 shrink-0" aria-hidden="true" />
@@ -51,7 +39,6 @@ function Index() {
         </p>
       </div>
 
-      {/* Catálogo */}
       <main id="catalogo" className="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
         <Reveal>
           <h2 className="text-center text-3xl font-semibold text-primary md:text-4xl">
@@ -81,7 +68,6 @@ function Index() {
         ))}
       </main>
 
-      {/* Vídeos */}
       <section className="bg-brand-cream py-14 md:py-20">
         <div className="mx-auto max-w-6xl px-4 md:px-6">
           <Reveal>
@@ -102,7 +88,6 @@ function Index() {
         </div>
       </section>
 
-      {/* Contato */}
       <section className="bg-primary py-14 text-primary-foreground md:py-20">
         <div className="mx-auto max-w-4xl px-4 text-center md:px-6">
           <Reveal>
@@ -134,12 +119,10 @@ function Index() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-brand-red-dark py-6 text-center text-sm text-primary-foreground/80">
         <p>© {new Date().getFullYear()} Salete Alimentos · Florianópolis, SC</p>
       </footer>
 
-      {/* Lightbox */}
       {lightbox?.image && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 animate-fade-in"
@@ -156,10 +139,7 @@ function Index() {
           >
             <X className="h-6 w-6" />
           </button>
-          <figure
-            className="max-h-full max-w-3xl"
-            onClick={(e) => e.stopPropagation()}
-          >
+          <figure className="max-h-full max-w-3xl" onClick={(e) => e.stopPropagation()}>
             <img
               src={lightbox.image}
               alt={`Empanada de ${lightbox.name}`}
