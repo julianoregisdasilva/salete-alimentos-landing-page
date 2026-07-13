@@ -1,8 +1,10 @@
 import { useState } from "react";
-import { Instagram, Leaf, MessageCircle, PlayCircle, X } from "lucide-react";
+import { Instagram, Leaf, MessageCircle, X } from "lucide-react";
 import { categories, type Product } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
 import { Reveal } from "@/components/Reveal";
+import video1Asset from "@/assets/video1.mp4.asset.json";
+import video2Asset from "@/assets/video2.mp4.asset.json";
 
 const WHATSAPP_URL = "https://wa.me/5548984440456";
 const INSTAGRAM_URL = "https://www.instagram.com/salete.alimentos/";
@@ -75,13 +77,16 @@ export default function App() {
               Por dentro da Salete
             </h2>
           </Reveal>
-          <div className="mt-8 grid gap-6 md:grid-cols-2">
-            {[1, 2].map((n) => (
-              <Reveal key={n} delay={n * 80}>
-                <div className="flex aspect-video w-full flex-col items-center justify-center gap-3 rounded-2xl border-2 border-dashed border-border bg-card text-muted-foreground">
-                  <PlayCircle className="h-12 w-12 opacity-40" aria-hidden="true" />
-                  <span className="text-sm font-medium opacity-60">Vídeo em breve</span>
-                </div>
+          <div className="mx-auto mt-8 grid max-w-3xl gap-6 sm:grid-cols-2">
+            {[video1Asset, video2Asset].map((v, i) => (
+              <Reveal key={v.url} delay={i * 80}>
+                <video
+                  src={v.url}
+                  controls
+                  playsInline
+                  preload="metadata"
+                  className="aspect-[9/16] w-full rounded-2xl bg-black object-cover shadow-lg"
+                />
               </Reveal>
             ))}
           </div>
