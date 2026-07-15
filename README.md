@@ -11,6 +11,10 @@ build: {
 },
  
 // Tells Vite the base public path when served in development or production, ensuring assets are correctly loaded on GitHub Pages
+// Before custom domain  
+base: "/salete-alimentos-landing-page/",
+
+// After custom domain  
 base: "/",
 ```
 
