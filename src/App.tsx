@@ -47,12 +47,12 @@ export default function App() {
         style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/madeira-background.jpeg)` }}
       >
         <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-yellow" aria-hidden="true" />
-        <main className="relative mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
+        <main className="relative mx-auto max-w-6xl px-3 py-14 md:px-4 md:py-20">
           <Reveal>
             <h2 className="text-center text-5xl font-semibold text-brand-yellow md:text-6xl">
               Nosso Catálogo
             </h2>
-            <p className="mx-auto mt-3 max-w-md text-center text-xl text-white md:text-2xl">
+            <p className="mx-auto mt-3 max-w-2xl px-2 text-center text-xl text-white md:text-2xl">
               Feitos artesanalmente, com ingredientes selecionados e sem conservantes.
             </p>
           </Reveal>
