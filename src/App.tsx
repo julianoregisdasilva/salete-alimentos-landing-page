@@ -47,7 +47,6 @@ export default function App() {
         className="relative bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${madeiraBg.url})` }}
       >
-        <div className="absolute inset-0 bg-black/30" aria-hidden="true" />
         <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-yellow" aria-hidden="true" />
         <main className="relative mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
           <Reveal>
