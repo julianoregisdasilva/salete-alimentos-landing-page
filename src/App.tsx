@@ -5,7 +5,6 @@ import { ProductCard } from "@/components/ProductCard";
 import { Reveal } from "@/components/Reveal";
 import video1Asset from "@/assets/video1.mp4.asset.json";
 import video2Asset from "@/assets/video2.mp4.asset.json";
-import madeiraBg from "@/assets/madeira-background.jpeg.asset.json";
 
 const WHATSAPP_URL = "https://wa.me/5548984440456";
 const INSTAGRAM_URL = "https://www.instagram.com/salete.alimentos/";
@@ -45,7 +44,7 @@ export default function App() {
       <section
         id="catalogo"
         className="relative bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${madeiraBg.url})` }}
+        style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/madeira-background.jpeg)` }}
       >
         <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-yellow" aria-hidden="true" />
         <main className="relative mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
