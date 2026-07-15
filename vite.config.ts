@@ -8,7 +8,7 @@ export default defineConfig({
     outDir: "dist",
     emptyOutDir: true,
   },
-  base: "/",
+  base: "/salete-alimentos-landing-page/",
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
