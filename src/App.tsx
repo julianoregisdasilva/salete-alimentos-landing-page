@@ -5,7 +5,6 @@ import { ProductCard } from "@/components/ProductCard";
 import { Reveal } from "@/components/Reveal";
 import video1Asset from "@/assets/video1.mp4.asset.json";
 import video2Asset from "@/assets/video2.mp4.asset.json";
-import madeiraBg from "@/assets/madeira-background.jpeg.asset.json";
 
 const WHATSAPP_URL = "https://wa.me/5548984440456";
 const INSTAGRAM_URL = "https://www.instagram.com/salete.alimentos/";
