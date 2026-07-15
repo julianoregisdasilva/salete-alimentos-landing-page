@@ -42,34 +42,42 @@ export default function App() {
         </p>
       </div>
 
-      <main id="catalogo" className="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
-        <Reveal>
-          <h2 className="text-center text-3xl font-semibold text-primary md:text-4xl">
-            Nosso Catálogo
-          </h2>
-          <p className="mx-auto mt-3 max-w-md text-center text-muted-foreground">
-            Feitos artesanalmente, com ingredientes selecionados e sem conservantes.
-          </p>
-        </Reveal>
+      <section
+        id="catalogo"
+        className="relative bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${madeiraBg.url})` }}
+      >
+        <div className="absolute inset-0 bg-black/55" aria-hidden="true" />
+        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-yellow" aria-hidden="true" />
+        <main className="relative mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
+          <Reveal>
+            <h2 className="text-center text-5xl font-semibold text-brand-yellow md:text-6xl">
+              Nosso Catálogo
+            </h2>
+            <p className="mx-auto mt-3 max-w-md text-center text-xl text-white md:text-2xl">
+              Feitos artesanalmente, com ingredientes selecionados e sem conservantes.
+            </p>
+          </Reveal>
 
-        {categories.map((category) => (
-          <section key={category.title} className="mt-12">
-            <Reveal>
-              <div className="flex items-center gap-3">
-                <h3 className="text-2xl font-semibold text-foreground">{category.title}</h3>
-                <div className="h-1 flex-1 rounded-full bg-brand-yellow/60" />
+          {categories.map((category) => (
+            <section key={category.title} className="mt-12">
+              <Reveal>
+                <div className="flex items-center gap-3">
+                  <h3 className="text-2xl font-semibold text-white">{category.title}</h3>
+                  <div className="h-1 flex-1 rounded-full bg-brand-yellow/60" />
+                </div>
+              </Reveal>
+              <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+                {category.products.map((product, i) => (
+                  <Reveal key={product.name} delay={(i % 4) * 70} className="h-full">
+                    <ProductCard product={product} onOpen={setLightbox} />
+                  </Reveal>
+                ))}
               </div>
-            </Reveal>
-            <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
-              {category.products.map((product, i) => (
-                <Reveal key={product.name} delay={(i % 4) * 70} className="h-full">
-                  <ProductCard product={product} onOpen={setLightbox} />
-                </Reveal>
-              ))}
-            </div>
-          </section>
-        ))}
-      </main>
+            </section>
+          ))}
+        </main>
+      </section>
 
       <section className="bg-brand-cream py-14 md:py-20">
         <div className="mx-auto max-w-6xl px-4 md:px-6">
