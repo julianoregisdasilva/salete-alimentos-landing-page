@@ -3,8 +3,6 @@ import { Instagram, Leaf, MessageCircle, X } from "lucide-react";
 import { categories, type Product } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
 import { Reveal } from "@/components/Reveal";
-import video1Asset from "@/assets/video1.mp4.asset.json";
-import video2Asset from "@/assets/video2.mp4.asset.json";
 
 const WHATSAPP_URL = "https://wa.me/5548984440456";
 const INSTAGRAM_URL = "https://www.instagram.com/salete.alimentos/";
@@ -85,8 +83,8 @@ export default function App() {
             </h2>
           </Reveal>
           <div className="mx-auto mt-8 grid max-w-3xl gap-6 sm:grid-cols-2">
-            {[{url:'/videos/video1.mp4'},
-              {url:'/videos/video2.mp4'}].map((v, i) => (
+            {[{url:'videos/video1.mp4'},
+              {url:'videos/video2.mp4'}].map((v, i) => (
               <Reveal key={v.url} delay={i * 80}>
                 <video
                   src={v.url}
