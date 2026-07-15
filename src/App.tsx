@@ -44,7 +44,7 @@ export default function App() {
       <section
         id="catalogo"
         className="relative bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${madeiraBg.url})` }}
+        style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/madeira-background.jpeg)` }}
       >
         <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-yellow" aria-hidden="true" />
         <main className="relative mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
