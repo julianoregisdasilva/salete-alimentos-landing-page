@@ -85,8 +85,8 @@ export default function App() {
             </h2>
           </Reveal>
           <div className="mx-auto mt-8 grid max-w-3xl gap-6 sm:grid-cols-2">
-            {[url:'/videos/video1.mp4',
-              url:'/videos/video2.mp4'].map((v, i) => (
+            {[{url:'/videos/video1.mp4'},
+              {url:'/videos/video2.mp4'}].map((v, i) => (
               <Reveal key={v.url} delay={i * 80}>
                 <video
                   src={v.url}
