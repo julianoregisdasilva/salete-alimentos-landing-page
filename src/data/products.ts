@@ -43,11 +43,13 @@ export const categories: ProductCategory[] = [
   },
   {
     title: "Empanadas Doces",
-    products: [{ name: "Chocolate", image: "images/chocolate.png" }],
+    products: [
+      { name: "Chocolate", image: "images/chocolate.png" }
+    ],
   },
   {
     title: "Salgados & Petiscos",
-    products: [
+    products:  [
       { name: "Coxinha de Frango", image: "images/coxinha.png" },
       { name: "Salsicha", image: "images/salsicha.png" },
       { name: "Doguinho", image: "images/doguinho.png" },
