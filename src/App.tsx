@@ -41,7 +41,7 @@ export default function App() {
 
       <section
         id="catalogo"
-        className="relativ bg-center bg-repeat"
+        className="relativ bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/madeira-background.jpeg)` }}
       >
         <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-yellow" aria-hidden="true" />
