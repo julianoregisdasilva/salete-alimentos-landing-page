@@ -56,7 +56,7 @@ export const categories: ProductCategory[] = [
   },
   {
     title: "Videos",
-    videos: [
+    products: [
       { name: "Vídeo1", url: "videos/video1.mp4"},
       { name: "Vídeo2", url: "videos/video2.mp4"},
     ]
