@@ -123,7 +123,7 @@ export default function App() {
                 className="inline-flex w-full items-center justify-center gap-2 rounded-full border-2 border-primary-foreground/60 px-7 py-3 text-sm font-extrabold uppercase tracking-wide transition-colors hover:bg-primary-foreground/10 sm:w-auto"
               >
                 <Instagram className="h-5 w-5" aria-hidden="true" />
-                @salete.alimentos
+                salete.alimentos
               </a>
             </div>
           </Reveal>
