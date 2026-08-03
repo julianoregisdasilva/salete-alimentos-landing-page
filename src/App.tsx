@@ -41,10 +41,12 @@ export default function App() {
       </header>
 
       <div className="bg-brand-yellow py-3">
-        <p className="mx-auto flex max-w-4xl items-center justify-center gap-2 px-4 text-center text-sm font-extrabold uppercase tracking-wide text-secondary-foreground">
-          <Leaf className="h-4 w-4 shrink-0" aria-hidden="true" />
-          Nossos produtos não contêm conservantes
-        </p>
+        <Reveal>
+          <p className="mx-auto flex max-w-4xl items-center justify-center gap-2 px-4 text-center text-sm font-extrabold uppercase tracking-wide text-secondary-foreground">
+            <Leaf className="h-4 w-4 shrink-0" aria-hidden="true" />
+            Nossos produtos não contêm conservantes
+          </p>
+        </Reveal>
       </div>
 
       <section
