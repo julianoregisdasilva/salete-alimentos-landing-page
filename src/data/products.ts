@@ -55,12 +55,5 @@ export const categories: ProductCategory[] = [
       { name: "Doguinho", image: "images/doguinho.png" },
       { name: "Pão de Queijo", image: "images/pao_de_queijo.png" },
     ],
-  },
-  {
-    title: "Videos",
-    products: [
-      { name: "Vídeo1", url: "videos/video1.mp4"},
-      { name: "Vídeo2", url: "videos/video2.mp4"},
-    ],
   }
 ];
