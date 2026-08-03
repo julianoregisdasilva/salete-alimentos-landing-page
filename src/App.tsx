@@ -54,7 +54,6 @@ export default function App() {
         className="relativ bg-repeat"
         style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/madeira-background.jpeg)` }}
       >
-        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-yellow" aria-hidden="true" />
         <main className="relative mx-auto max-w-6xl px-3 py-14 md:px-4 md:py-20">
           <Reveal>
             <h2 className="text-center text-5xl font-semibold text-brand-yellow md:text-6xl">
