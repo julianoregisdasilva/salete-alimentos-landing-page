@@ -16,27 +16,37 @@ export default function App() {
         <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-brand-yellow/20 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-32 -left-16 h-80 w-80 rounded-full bg-brand-red-dark/60 blur-3xl" />
         <div className="relative mx-auto flex max-w-4xl flex-col items-center px-6 py-16 text-center md:py-24">
-          <img src="images/logo.png" alt="Salete Alimentos" className="h-40 w-auto md:h-52" />
-          <h1 className="mt-8 max-w-2xl text-4xl font-semibold leading-tight md:text-5xl">
-            Mais de 30 anos de história em Floripa
-          </h1>
-          <p className="mt-4 max-w-xl text-lg font-medium text-primary-foreground/90">
-            Tradição, qualidade e muito sabor em cada empanada.
-          </p>
-          <a
-            href="#catalogo"
-            className="mt-8 inline-flex items-center gap-2 rounded-full bg-brand-yellow px-7 py-3 text-sm font-extrabold uppercase tracking-wide text-secondary-foreground transition-transform hover:scale-105"
-          >
-            Conheça nossos produtos
-          </a>
+          <Reveal delay={0}>
+            <img src="images/logo.png" alt="Salete Alimentos" className="h-40 w-auto md:h-52" />
+          </Reveal>
+          <Reveal delay={100}>
+            <h1 className="mt-8 max-w-2xl text-4xl font-semibold leading-tight md:text-5xl">
+              Mais de 30 anos de história em Floripa
+            </h1>
+          </Reveal>
+          <Reveal delay={200}>
+            <p className="mt-4 max-w-xl text-lg font-medium text-primary-foreground/90">
+              Tradição, qualidade e muito sabor em cada empanada.
+            </p>
+          </Reveal>
+          <Reveal delay={300}>
+            <a
+              href="#catalogo"
+              className="mt-8 inline-flex items-center gap-2 rounded-full bg-brand-yellow px-7 py-3 text-sm font-extrabold uppercase tracking-wide text-secondary-foreground transition-transform hover:scale-105"
+            >
+              Conheça nossos produtos
+            </a>
+          </Reveal>
         </div>
       </header>
 
       <div className="bg-brand-yellow py-3">
-        <p className="mx-auto flex max-w-4xl items-center justify-center gap-2 px-4 text-center text-sm font-extrabold uppercase tracking-wide text-secondary-foreground">
-          <Leaf className="h-4 w-4 shrink-0" aria-hidden="true" />
-          Nossos produtos não contêm conservantes
-        </p>
+        <Reveal>
+          <p className="mx-auto flex max-w-4xl items-center justify-center gap-2 px-4 text-center text-sm font-extrabold uppercase tracking-wide text-secondary-foreground">
+            <Leaf className="h-4 w-4 shrink-0" aria-hidden="true" />
+            Nossos produtos não contêm conservantes
+          </p>
+        </Reveal>
       </div>
 
       <section
