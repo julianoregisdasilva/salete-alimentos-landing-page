@@ -51,7 +51,7 @@ export default function App() {
 
       <section
         id="catalogo"
-        className="relative z-10 bg-cover bg-center bg-no-repeat shadow-[0_20px_40px_-10px_rgba(0,0,0,0.5)]"
+        className="relative z-10 bg-top bg-repeat-y bg-[length:100%_auto] shadow-[0_20px_40px_-10px_rgba(0,0,0,0.5)]"
         style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/madeira-background.jpeg)` }}
       >
         <main className="relative mx-auto max-w-6xl px-3 py-14 md:px-4 md:py-20">
