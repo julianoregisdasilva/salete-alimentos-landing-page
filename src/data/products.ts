@@ -9,51 +9,53 @@ export type ProductCategory = {
   products: Product[];
 };
 
+const publicImage = (fileName: string) => `${import.meta.env.BASE_URL}images/${fileName}`;
+
 export const categories: ProductCategory[] = [
   {
     title: "Empanadas Salgadas",
     products: [
-      { name: "Calabresa", image: "images/calabresa.png" },
-      { name: "Calabresa com Cheddar", image: "images/calabresa_com_cheddar.png" },
-      { name: "Camarão", image: "images/camarao.png" },
-      { name: "Carne Bolonhesa", image: "images/carne_bolonhesa.png" },
-      { name: "Carne ao Molho Branco", image: "images/carne_molho_branco.png"  },
-      { name: "Frango", image: "images/frango.png" },
-      { name: "Frango (massa integral)", image: "images/frango_integral.png" },
-      { name: "Frango com Palmito", image: "images/frango_palmito.png" },
-      { name: "Frango com Requeijão", image: "images/frango_requeijao.png" },
-      { name: "Frango com Requeijão (massa integral)", image: "images/frango_requeijao_integral.png" },
-      { name: "Frango, Milho e Bacon", image: "images/frango_milho_bacon.png" },
-      { name: "Frango Premium", image: "images/frango_premium.png" },
-      { name: "Mexicana", image: "images/mexicana.png" },
-      { name: "Pizza", image: "images/pizza.png" },
-      { name: "Presunto e Queijo", image: "images/presunto_queijo.png" },
-      { name: "Ricota com Chester e Alho Poró", image: "images/ricota_chester_alhoPoro.png" },
-      { name: "Ricota com Tomate Seco", image: "images/ricota_tomateSeco.png" },
+      { name: "Calabresa", image: publicImage("calabresa.png") },
+      { name: "Calabresa com Cheddar", image: publicImage("calabresa_com_cheddar.png") },
+      { name: "Camarão", image: publicImage("camarao.png") },
+      { name: "Carne Bolonhesa", image: publicImage("carne_bolonhesa.png") },
+      { name: "Carne ao Molho Branco", image: publicImage("carne_molho_branco.png")  },
+      { name: "Frango", image: publicImage("frango.png") },
+      { name: "Frango (massa integral)", image: publicImage("frango_integral.png") },
+      { name: "Frango com Palmito", image: publicImage("frango_palmito.png") },
+      { name: "Frango com Requeijão", image: publicImage("frango_requeijao.png") },
+      { name: "Frango com Requeijão (massa integral)", image: publicImage("frango_requeijao_integral.png") },
+      { name: "Frango, Milho e Bacon", image: publicImage("frango_milho_bacon.png") },
+      { name: "Frango Premium", image: publicImage("frango_premium.png") },
+      { name: "Mexicana", image: publicImage("mexicana.png") },
+      { name: "Pizza", image: publicImage("pizza.png") },
+      { name: "Presunto e Queijo", image: publicImage("presunto_queijo.png") },
+      { name: "Ricota com Chester e Alho Poró", image: publicImage("ricota_chester_alhoPoro.png") },
+      { name: "Ricota com Tomate Seco", image: publicImage("ricota_tomateSeco.png") },
     ],
   },
   {
     title: "Empanadas Vegetarianas",
     products: [
-      { name: "Brócolis com Requeijão", image: "images/brocolis.png" },
-      { name: "Legumes", image: "images/legumes.png" },
-      { name: "Palmito", image: "images/palmito.png" },
-      { name: "Queijo", image: "images/queijo.png" },
+      { name: "Brócolis com Requeijão", image: publicImage("brocolis.png") },
+      { name: "Legumes", image: publicImage("legumes.png") },
+      { name: "Palmito", image: publicImage("palmito.png") },
+      { name: "Queijo", image: publicImage("queijo.png") },
     ],
   },
   {
     title: "Empanadas Doces",
     products: [
-      { name: "Chocolate", image: "images/chocolate.png" }
+      { name: "Chocolate", image: publicImage("chocolate.png") }
     ],
   },
   {
     title: "Salgados & Petiscos",
     products:  [
-      { name: "Coxinha de Frango", image: "images/coxinha.png" },
-      { name: "Salsicha", image: "images/salsicha.png" },
-      { name: "Doguinho", image: "images/doguinho.png" },
-      { name: "Pão de Queijo", image: "images/pao_de_queijo.png" },
+      { name: "Coxinha de Frango", image: publicImage("coxinha.png") },
+      { name: "Salsicha", image: publicImage("salsicha.png") },
+      { name: "Doguinho", image: publicImage("doguinho.png") },
+      { name: "Pão de Queijo", image: publicImage("pao_de_queijo.png") },
     ],
   }
 ];
