@@ -49,3 +49,5 @@ ________________________________________________________________________________
 In "Configurar zona DNS", I created:  
 * four 'A' type entries with github IP's for each;
 * a CNAME entry pointing my domain to my domain @gitHub pages (julianoregisdasilva.github.io).
+
+* Publish!!
