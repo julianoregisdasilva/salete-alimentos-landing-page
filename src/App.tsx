@@ -6,6 +6,7 @@ import { Reveal } from "@/components/Reveal";
 
 const WHATSAPP_URL = "https://wa.me/5548984440456";
 const INSTAGRAM_URL = "https://www.instagram.com/salete.alimentos/";
+const publicAsset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
 
 export default function App() {
   const [lightbox, setLightbox] = useState<Product | null>(null);
@@ -17,7 +18,7 @@ export default function App() {
         <div className="pointer-events-none absolute -bottom-32 -left-16 h-80 w-80 rounded-full bg-brand-red-dark/60 blur-3xl" />
         <div className="relative mx-auto flex max-w-4xl flex-col items-center px-6 py-16 text-center md:py-24">
           <Reveal delay={0}>
-            <img src="images/logo.png" alt="Salete Alimentos" className="h-40 w-auto md:h-52" />
+            <img src={publicAsset("images/logo.png")} alt="Salete Alimentos" className="h-40 w-auto md:h-52" />
           </Reveal>
           <Reveal delay={100}>
             <h1 className="mt-8 max-w-2xl text-4xl font-semibold leading-tight md:text-5xl">
@@ -52,7 +53,7 @@ export default function App() {
       <section
         id="catalogo"
         className="relative z-10 bg-top bg-repeat-y bg-[length:100%_auto] shadow-[0_20px_40px_-10px_rgba(0,0,0,0.5)]"
-        style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/madeira-background.jpeg)` }}
+        style={{ backgroundImage: `url(${publicAsset("images/madeira-background.jpeg")})` }}
       >
         <main className="relative mx-auto max-w-6xl px-3 py-14 md:px-4 md:py-20">
           <Reveal>
@@ -92,11 +93,10 @@ export default function App() {
             </h2>
           </Reveal>
           <div className="mx-auto mt-8 grid max-w-3xl gap-6 sm:grid-cols-2">
-            {[{url:'/salete-alimentos-landing-page/videos/video1.mp4'},
-              {url:'/salete-alimentos-landing-page/videos/video2.mp4'}].map((v, i) => (
-              <Reveal key={v.url} delay={i * 80}>
+            {[publicAsset("videos/video1.mp4"), publicAsset("videos/video2.mp4")].map((url, i) => (
+              <Reveal key={url} delay={i * 80}>
                 <video
-                  src={v.url}
+                  src={url}
                   controls
                   playsInline
                   preload="metadata"
