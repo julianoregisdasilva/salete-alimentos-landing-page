@@ -89,7 +89,7 @@ export default function App() {
         <div className="mx-auto max-w-6xl px-4 md:px-6">
           <Reveal>
             <h2 className="text-center text-3xl font-semibold text-primary md:text-4xl">
-              Por dentro da Salete
+              Por dentro Salete Alimentos
             </h2>
           </Reveal>
           <div className="mx-auto mt-8 grid max-w-3xl gap-6 sm:grid-cols-2">
