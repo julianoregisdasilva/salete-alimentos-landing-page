@@ -18,10 +18,10 @@ export const categories: ProductCategory[] = [
     title: "Empanadas Salgadas",
     products: [
       { name: "Calabresa", image: publicImage("calabresa.png"), thumb: publicThumb("calabresa.png") },
-      { name: "Calabresa com Cheddar", image: publicImage("calabresa_com_cheddar.png") },
-      { name: "Camarão", image: publicImage("camarao.png") },
-      { name: "Carne Bolonhesa", image: publicImage("carne_bolonhesa.png") },
-      { name: "Carne ao Molho Branco", image: publicImage("carne_molho_branco.png")  },
+      { name: "Calabresa com Cheddar", image: publicImage("calabresa_com_cheddar.png"), thumb: publicThumb("calabresa_com_cheddar.png") },
+      { name: "Camarão", image: publicImage("camarao.png"), thumb: publicThumb("camarao.png") },
+      { name: "Carne Bolonhesa", image: publicImage("carne_bolonhesa.png"), thumb: publicThumb("carne_bolonhesa.png") },
+      { name: "Carne ao Molho Branco", image: publicImage("carne_molho_branco.png"), thumb: publicThumb("carne_molho_branco.png") },
       { name: "Frango", image: publicImage("frango.png"), thumb: publicThumb("frango.png") },
       { name: "Frango (massa integral)", image: publicImage("frango_integral.png"), thumb: publicThumb("frango_integral.png") },
       { name: "Frango com Palmito", image: publicImage("frango_palmito.png"), thumb: publicThumb("frango_palmito.png") },
@@ -48,13 +48,13 @@ export const categories: ProductCategory[] = [
   {
     title: "Empanadas Doces",
     products: [
-      { name: "Chocolate", image: publicImage("chocolate.png") }
+      { name: "Chocolate", image: publicImage("chocolate.png"), thumb: publicThumb("chocolate.png") }
     ],
   },
   {
     title: "Salgados & Petiscos",
     products:  [
-      { name: "Coxinha de Frango", image: publicImage("coxinha.png") },
+      { name: "Coxinha de Frango", image: publicImage("coxinha.png"), thumb: publicThumb("coxinha.png") },
       { name: "Salsicha", image: publicImage("salsicha.png"), thumb: publicThumb("salsicha.jpg") },
       { name: "Doguinho", image: publicImage("doguinho.png"), thumb: publicThumb("doguinho.png") },
       { name: "Pão de Queijo", image: publicImage("pao_de_queijo.png"), thumb: publicThumb("pao_de_queijo.png") },
