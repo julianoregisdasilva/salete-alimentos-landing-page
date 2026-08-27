@@ -21,7 +21,7 @@ export function ProductCard({ product, onOpen }: ProductCardProps) {
       <div className="relative aspect-[4/3] w-full overflow-hidden bg-brand-cream">
         {product.image ? (
           <img
-            src={product.image}
+            src={product.thumb ?? product.image}
             alt={`Empanada de ${product.name}`}
             loading="lazy"
             className="h-full w-full object-contain p-2 transition-transform duration-300 group-hover:scale-105"
