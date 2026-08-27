@@ -48,7 +48,7 @@ export const categories: ProductCategory[] = [
   {
     title: "Empanadas Doces",
     products: [
-      { name: "Chocolate", image: publicImage("chocolate.png") }
+      { name: "Chocolate", image: publicImage("chocolate.png"), thumb: publicThumb("chocolate.png") }
     ],
   },
   {
