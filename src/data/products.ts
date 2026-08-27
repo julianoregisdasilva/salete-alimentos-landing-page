@@ -40,7 +40,7 @@ export const categories: ProductCategory[] = [
     title: "Empanadas Vegetarianas",
     products: [
       { name: "Brócolis com Requeijão", image: publicImage("brocolis.png"), thumb: publicThumb("brocolis.png") },
-      { name: "Legumes", image: publicImage("legumes.png") },
+      { name: "Legumes", image: publicImage("legumes.png"), thumb: publicThumb("legumes.png") },
       { name: "Palmito", image: publicImage("palmito.png"), thumb: publicThumb("palmito.png") },
       { name: "Queijo", image: publicImage("queijo.png"), thumb: publicThumb("queijo.png") },
     ],
